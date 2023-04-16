@@ -1,7 +1,33 @@
 body {
+    position: relative;
     overflow: hidden;
     min-height: 100vh;
     cursor: crosshair;
+}
+.start {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 50%;
+    right: 50%;
+    height: 50%;
+    z-index: 2;
+    transform: translate(50%, 50%);
+    background: #ff00007a;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+}
+.go {
+    width: 50%;
+    background: none;
+    border: white solid 1px;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
 }
 .bubble {
     position: absolute;
@@ -23,5 +49,15 @@ h3 {
     font-size: 10rem;
     text-align: center;
     margin-top: 20px;
-    color: rgba(128, 128, 128, 0.555)
+    user-select: none;
+}
+.points{
+    color:rgba(255, 0, 0, 0.433)
+}
+.minuteur {
+    color: rgba(0, 0, 0, 0.389);
+}
+.indicateurs {
+    display: flex;
+    justify-content: space-around;
 }
